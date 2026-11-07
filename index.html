@@ -4,42 +4,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Faruk Alijević | Apps</title>
-  <meta name="description" content="Apps made by Faruk Alijević.">
+  <meta name="description" content="Small, thoughtful apps made by Faruk.">
   <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="globalnav">
+<nav class="globalnav" aria-label="Site">
   <div class="inner">
     <span class="brand">Faruk Alijević</span>
     <a href="mailto:falijevic.dev@gmail.com">Contact</a>
   </div>
 </nav>
 
-<header class="hero">
-  <h1>Apps.</h1>
-  <p>Small, thoughtful apps made by Faruk Alijević.</p>
-</header>
+<main>
+  <header class="hero">
+    <h1>Apps.</h1>
+    <p>Small, thoughtful apps made by Faruk.</p>
+  </header>
 
-<section class="section">
-  <div class="inner">
-    <h2>All apps</h2>
-    <div class="apps">
-      <article class="app">
-        <img src="koje/icon.png" alt="Ko je? icon">
-        <div>
-          <div class="meta">iPhone · Game</div>
-          <h3>Ko je?</h3>
-          <p>An impostor party game for friends. One phone, the whole crew.</p>
-        </div>
-        <div class="links">
-          <a class="pill" href="koje/">Learn more</a>
-          <a href="koje/privacy.html">Privacy</a>
-        </div>
-      </article>
+  <section class="section" aria-labelledby="all-apps">
+    <div class="inner">
+      <h2 id="all-apps">All apps</h2>
+      <ul class="apps">
+        <li class="app">
+          <img src="koje/icon.png" alt="" width="72" height="72">
+          <div>
+            <h3>Ko je?</h3>
+            <p class="meta">Party game for iPhone</p>
+            <p class="desc">An impostor party game for friends. One phone, the whole crew.</p>
+          </div>
+          <div class="links">
+            <a class="pill" href="koje/" aria-label="Learn more about Ko je?">Learn more</a>
+            <a href="koje/privacy.html" aria-label="Ko je? privacy policy">Privacy</a>
+          </div>
+        </li>
+      </ul>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer>
   <div class="inner">
