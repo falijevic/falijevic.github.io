@@ -5,46 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ko je? | Podrška</title>
   <meta name="description" content="Ko je? Party igra uljeza za ekipu. Pomoć, pravila i kontakt.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0c10">
   <link rel="icon" href="icon.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <main>
-  <div class="hero">
-    <img src="icon.png" alt="Ko je? ikona">
+  <header class="hero">
+    <img src="icon.png" alt="" width="88" height="88">
     <div>
       <div class="kicker">Podrška</div>
       <h1>Ko je?</h1>
-      <p>Party igra uljeza za 4 do 20 igrača. Jedan telefon, cijela ekipa.</p>
+      <p class="lede">Party igra uljeza za 4 do 20 igrača. Jedan telefon, cijela ekipa.</p>
     </div>
-  </div>
+  </header>
 
-  <h2>Kako se igra</h2>
-  <div class="card">
-    <p><strong>1.</strong> Telefon ide ukrug i svako tajno pogleda svoju kartu.</p>
-    <p><strong>2.</strong> Civili znaju riječ, Uljez dobije sličnu, a Blefer nema pojma.</p>
-    <p><strong>3.</strong> Redom svako kaže jednu riječ o svom pojmu, pa diskutujete ko je sumnjiv.</p>
-    <p><strong>4.</strong> Tajno glasate i izbacite jednog igrača. Uhvaćeni Blefer može naglas pogoditi riječ. Ako pogodi, pobjeđuje sam.</p>
-  </div>
+  <section aria-labelledby="pravila">
+    <h2 id="pravila">Kako se igra</h2>
+    <div class="card">
+      <ol class="steps">
+        <li><p>Telefon ide ukrug i svako tajno pogleda svoju kartu.</p></li>
+        <li><p>Civili znaju riječ, Uljez dobije sličnu, a Blefer nema pojma.</p></li>
+        <li><p>Redom svako kaže jednu riječ o svom pojmu, pa diskutujete ko je sumnjiv.</p></li>
+        <li><p>Tajno glasate i izbacite jednog igrača. Uhvaćeni Blefer može naglas pogoditi riječ. Ako pogodi, pobjeđuje sam.</p></li>
+      </ol>
+    </div>
+  </section>
 
-  <h2>Česta pitanja</h2>
-  <div class="card">
-    <p><strong>Treba li internet?</strong><br>Ne. Igra radi potpuno offline.</p>
-    <p><strong>Koliko igrača?</strong><br>Od 4 do 20, na jednom telefonu.</p>
-    <p><strong>Mogu li dodati svoje riječi?</strong><br>Da. Na ekranu „Podešavanje“ dodirnite „Dodaj svoje riječi“.</p>
-    <p><strong>Kako isključiti zvuk?</strong><br>Ikonica zvučnika na početnom ekranu. Igra poštuje i tihi režim telefona.</p>
-  </div>
+  <section aria-labelledby="pitanja">
+    <h2 id="pitanja">Česta pitanja</h2>
+    <div class="card">
+      <dl class="faq">
+        <div><dt>Treba li internet?</dt><dd>Ne. Igra radi potpuno offline.</dd></div>
+        <div><dt>Koliko igrača?</dt><dd>Od 4 do 20, na jednom telefonu.</dd></div>
+        <div><dt>Mogu li dodati svoje riječi?</dt><dd>Da. Na ekranu „Podešavanje“ dodirnite „Dodaj svoje riječi“.</dd></div>
+        <div><dt>Kako isključiti zvuk?</dt><dd>Ikonica zvučnika na početnom ekranu. Igra poštuje i tihi režim telefona.</dd></div>
+      </dl>
+    </div>
+  </section>
 
-  <h2>Kontakt</h2>
-  <div class="card">
-    <p>Pronašli ste grešku, imate prijedlog riječi ili pitanje? Pišite na
-      <a href="mailto:falijevic.dev@gmail.com">falijevic.dev@gmail.com</a>.</p>
-  </div>
+  <section aria-labelledby="kontakt">
+    <h2 id="kontakt">Kontakt</h2>
+    <div class="card">
+      <p>Pronašli ste grešku, imate prijedlog riječi ili pitanje? Pišite na
+        <a href="mailto:falijevic.dev@gmail.com">falijevic.dev@gmail.com</a>.</p>
+      <a class="button" href="mailto:falijevic.dev@gmail.com">Pošalji email</a>
+    </div>
+  </section>
 
-  <nav>
+  <nav class="pagenav" aria-label="Stranice">
     <a href="privacy.html">Politika privatnosti</a>
   </nav>
-  <footer>© 2026 Faruk Alijević</footer>
+  <footer>
+    <span>© 2026 Faruk Alijević</span>
+    <a href="../">Sve aplikacije</a>
+  </footer>
 </main>
 </body>
 </html>

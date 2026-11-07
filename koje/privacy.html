@@ -5,45 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ko je? | Privatnost</title>
   <meta name="description" content="Politika privatnosti za igru Ko je?">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0c10">
   <link rel="icon" href="icon.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <main>
-  <div class="kicker">Politika privatnosti</div>
-  <h1>Ko je? ne prikuplja vaše podatke</h1>
-  <p>Zadnja izmjena: 5. novembar 2026.</p>
+  <header>
+    <div class="kicker">Politika privatnosti</div>
+    <h1>Ko je? ne prikuplja vaše podatke</h1>
+    <p class="updated">Zadnja izmjena: 5. novembar 2026.</p>
+  </header>
 
-  <div class="card">
+  <div class="card soft">
     <p><strong>Ukratko:</strong> igra ne prikuplja, ne šalje i ne prodaje nikakve lične podatke. Nema registracije, reklama, analitike niti praćenja.</p>
   </div>
 
-  <h2>Šta se čuva na vašem telefonu</h2>
-  <p>Da bi igra bila praktičnija, na samom uređaju (nikad na serveru) čuvaju se:</p>
-  <ul>
-    <li>imena igrača i broj igrača koje ste unijeli,</li>
-    <li>odabrane kategorije riječi, trajanje tajmera i postavka zvuka,</li>
-    <li>parovi riječi koje ste sami dodali,</li>
-    <li>lista već odigranih riječi, da se ne ponavljaju.</li>
-  </ul>
-  <p>Ovi podaci ostaju na vašem uređaju. Brisanjem aplikacije brišu se i oni.</p>
+  <section aria-labelledby="uredjaj">
+    <h2 id="uredjaj">Šta se čuva na vašem telefonu</h2>
+    <p>Da bi igra bila praktičnija, na samom uređaju (nikad na serveru) čuvaju se:</p>
+    <ul class="plain">
+      <li>imena igrača i broj igrača koje ste unijeli,</li>
+      <li>odabrane kategorije riječi, trajanje tajmera i postavka zvuka,</li>
+      <li>parovi riječi koje ste sami dodali,</li>
+      <li>lista već odigranih riječi, da se ne ponavljaju.</li>
+    </ul>
+    <p>Ovi podaci ostaju na vašem uređaju. Brisanjem aplikacije brišu se i oni.</p>
+  </section>
 
-  <h2>Mrežni zahtjevi</h2>
-  <p>Pri pokretanju igra provjerava javni Apple servis (iTunes Lookup) da li postoji novija verzija u App Storeu. Taj zahtjev ne sadrži nikakve podatke o vama, samo identifikator aplikacije.</p>
+  <section aria-labelledby="mreza">
+    <h2 id="mreza">Mrežni zahtjevi</h2>
+    <p>Pri pokretanju igra provjerava javni Apple servis (iTunes Lookup) da li postoji novija verzija u App Storeu. Taj zahtjev ne sadrži nikakve podatke o vama, samo identifikator aplikacije.</p>
+  </section>
 
-  <h2>Kupovine</h2>
-  <p>Ako igra u budućnosti ponudi dodatne pakete riječi, kupovinu u potpunosti obrađuje Apple. Mi ne vidimo niti čuvamo podatke o plaćanju.</p>
+  <section aria-labelledby="kupovine">
+    <h2 id="kupovine">Kupovine</h2>
+    <p>Ako igra u budućnosti ponudi dodatne pakete riječi, kupovinu u potpunosti obrađuje Apple. Mi ne vidimo niti čuvamo podatke o plaćanju.</p>
+  </section>
 
-  <h2>Djeca</h2>
-  <p>Igra ne prikuplja podatke ni od koga, pa ni od djece.</p>
+  <section aria-labelledby="djeca">
+    <h2 id="djeca">Djeca</h2>
+    <p>Igra ne prikuplja podatke ni od koga, pa ni od djece.</p>
+  </section>
 
-  <h2>Kontakt</h2>
-  <p>Pitanja o privatnosti: <a href="mailto:falijevic.dev@gmail.com">falijevic.dev@gmail.com</a></p>
+  <section aria-labelledby="kontakt">
+    <h2 id="kontakt">Kontakt</h2>
+    <p>Pitanja o privatnosti: <a href="mailto:falijevic.dev@gmail.com">falijevic.dev@gmail.com</a></p>
+  </section>
 
-  <nav>
-    <a href="index.html">← Podrška</a>
+  <nav class="pagenav" aria-label="Stranice">
+    <a href="index.html"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M7.5 2 3.5 6l4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Podrška</a>
   </nav>
-  <footer>© 2026 Faruk Alijević</footer>
+  <footer>
+    <span>© 2026 Faruk Alijević</span>
+    <a href="../">Sve aplikacije</a>
+  </footer>
 </main>
 </body>
 </html>
